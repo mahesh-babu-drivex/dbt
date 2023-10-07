@@ -10,12 +10,16 @@
 
 
 with SHEET1 as (
-
-    select 1 as id
+    select 1 as PDI,
+           'Manish' as "Technician name",
+           '1' as Refurbishment
     union all
-    select null as id
-
+    select null as PDI,
+           'Mahesh' as "Technician name",
+           '6' as Refurbishment
 )
+
+
 
 
 SELECT * from SHEET1
@@ -26,9 +30,3 @@ SELECT * from SHEET1
 */
 
 -- where id is not null
-
-
-
--- my_model.sql
-
--- Calculate the average PDI and Inspection values, and count records by Vehicle type
