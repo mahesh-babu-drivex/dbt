@@ -2,19 +2,19 @@ models:
   - name: my_model
     description: "Model to rename columns"
     columns:
-      - name: new_date_column_name
+      - name: Date
         description: "Renamed Date column"
-      - name: new_technician_name_column_name
+      - name: Technician Name
         description: "Renamed Technician Name column"
-      - name: new_pdi_column_name
+      - name: PDI
         description: "Renamed PDI column"
-      - name: new_inspection_column_name
+      - name: Inspection
         description: "Renamed Inspection column"
-      - name: new_refurbishment_column_name
+      - name: Refurbishment
         description: "Renamed Refurbishment column"
-      - name: new_quality_check_column_name
+      - name: Quality check
         description: "Renamed Quality check column"
-      - name: new_vehicle_type_column_name
+      - name: Vehicle type
         description: "Renamed Vehicle type column"
-      - name: new_after_refurbishment_status_column_name
+      - name: After Refurbishment status
         description: "Renamed After Refurbishment status column"
