@@ -7,13 +7,7 @@
     Try changing "table" to "view" below
 */
 
-SELECT
-    AVG(PDI) AS avg_pdi,
-    AVG(Inspection) AS avg_inspection,
-    "Vehicle type",
-    COUNT(*) AS record_count
-FROM SHEET1
-GROUP BY "Vehicle type";
+SELECT * from SHEET1
 
 
 /*
