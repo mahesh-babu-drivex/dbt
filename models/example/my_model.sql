@@ -9,7 +9,7 @@
 {{ config(materialized='table') }}
 
 
-with source_data as (
+with SHEET1 as (
     SELECT * from SHEET1
 )
 
