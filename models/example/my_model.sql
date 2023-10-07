@@ -9,5 +9,12 @@
 {{ config(materialized='table') }}
 
 
+
+
+-- Reference the existing table and include all columns in a CTE
 WITH source_data AS (
-    SELECT * FROM SHEET1 )
+  SELECT * FROM {{ ref('SHEET1') }}
+)
+
+-- You can now use the source_data CTE in your dbt model
+SELECT * FROM source_data;
