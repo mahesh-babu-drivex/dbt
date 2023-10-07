@@ -9,20 +9,11 @@
 {{ config(materialized='table') }}
 
 
-with SHEET1 as (
-    select 1 as PDI,
-           'Manish' as "Technician name",
-           '1' as Refurbishment
-    union all
-    select null as PDI,
-           'Mahesh' as "Technician name",
-           '6' as Refurbishment
+with source_data as (
+    SELECT * from SHEET1
 )
 
 
-
-
-SELECT * from SHEET1
 
 
 /*
