@@ -17,4 +17,4 @@ WITH SHEET1 AS (
 )
 
 -- You can now use the source_data CTE in your dbt model
-SELECT * FROM SHEET1;
+SELECT * FROM SHEET1
