@@ -6,8 +6,9 @@
 
     Try changing "table" to "view" below
 */
+{{ config(materialized='table') }}
 
-SELECT * from Sheet1
+SELECT * from SHEET1
 
 
 /*
@@ -17,7 +18,6 @@ SELECT * from Sheet1
 -- where id is not null
 
 
--- {{ config(materialized='table') }}
 
 -- my_model.sql
 
