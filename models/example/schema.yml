@@ -1,6 +1,8 @@
 models:
   - name: my_model
     description: "Model to rename columns"
+    depends_on:
+      - source: AIRBYTE_DATABASEE.AIRBYTE_SCHEMAA.SHEET1
     columns:
       - name: Date
         description: "Renamed Date column"
