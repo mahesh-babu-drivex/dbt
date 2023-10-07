@@ -8,7 +8,17 @@
 */
 {{ config(materialized='table') }}
 
-SELECT * from my_first;
+
+with SHEET1 as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+
+SELECT * from SHEET1
 
 
 /*
