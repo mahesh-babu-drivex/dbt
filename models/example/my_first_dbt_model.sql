@@ -7,7 +7,7 @@
     Try changing "table" to "view" below
 */
 
-SELECT * from SHEET1
+SELECT * from Sheet1
 
 
 /*
