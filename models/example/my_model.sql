@@ -12,9 +12,9 @@
 
 
 -- Reference the existing table and include all columns in a CTE
-WITH source_data AS (
+WITH SHEET1 AS (
   SELECT * FROM {{ ref('SHEET1') }}
 )
 
 -- You can now use the source_data CTE in your dbt model
-SELECT * FROM source_data;
+SELECT * FROM SHEET1;
