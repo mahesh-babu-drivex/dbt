@@ -1,21 +1,20 @@
-
-version: 2
-
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: my_model
+    description: "Model to rename columns"
     columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
-
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+      - name: new_date_column_name
+        description: "Renamed Date column"
+      - name: new_technician_name_column_name
+        description: "Renamed Technician Name column"
+      - name: new_pdi_column_name
+        description: "Renamed PDI column"
+      - name: new_inspection_column_name
+        description: "Renamed Inspection column"
+      - name: new_refurbishment_column_name
+        description: "Renamed Refurbishment column"
+      - name: new_quality_check_column_name
+        description: "Renamed Quality check column"
+      - name: new_vehicle_type_column_name
+        description: "Renamed Vehicle type column"
+      - name: new_after_refurbishment_status_column_name
+        description: "Renamed After Refurbishment status column"

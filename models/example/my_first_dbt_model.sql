@@ -7,21 +7,24 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table') }}
+SELECT
+    AVG(PDI) AS avg_pdi,
+    AVG(Inspection) AS avg_inspection,
+    "Vehicle type",
+    COUNT(*) AS record_count
+FROM SHEET1
+GROUP BY "Vehicle type";
 
-with source_data as (
-
-    select 1 as id
-    union all
-    select null as id
-
-)
-
-select *
-from source_data
 
 /*
     Uncomment the line below to remove records with null `id` values
 */
 
 -- where id is not null
+
+
+-- {{ config(materialized='table') }}
+
+-- my_model.sql
+
+-- Calculate the average PDI and Inspection values, and count records by Vehicle type
