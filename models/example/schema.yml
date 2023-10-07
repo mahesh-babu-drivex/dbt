@@ -3,20 +3,3 @@ models:
     description: "Model to rename columns"
     depends_on:
       - source: AIRBYTE_SCHEMAA.SHEET1
-    columns:
-      - name: Date
-        description: "Renamed Date column"
-      - name: Technician Name
-        description: "Renamed Technician Name column"
-      - name: PDI
-        description: "Renamed PDI column"
-      - name: Inspection
-        description: "Renamed Inspection column"
-      - name: Refurbishment
-        description: "Renamed Refurbishment column"
-      - name: Quality check
-        description: "Renamed Quality check column"
-      - name: Vehicle type
-        description: "Renamed Vehicle type column"
-      - name: After Refurbishment status
-        description: "Renamed After Refurbishment status column"
