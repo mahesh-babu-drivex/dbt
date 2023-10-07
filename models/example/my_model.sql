@@ -8,7 +8,7 @@
 */
 {{ config(materialized='table') }}
 
-SELECT * from SHEET1
+SELECT * from my_first;
 
 
 /*
